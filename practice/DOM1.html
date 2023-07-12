@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom1</title>
+</head>
+<body>
+    <h1>hey</h1>
+    <h1>hello</h1>
+    <h1>hola</h1>
+    <p id="one">Namaste</p>
+    <ul>
+        <li class="one">one </li>
+        <li class="one">two</li>
+        <li class="one">three</li>
+    </ul>
+    <script>
+        // id 
+        let var1 =document.getElementById("one");
+        console.log(var1.innerText);
+
+        // class 
+let var2 =document.getElementsByClassName("one");
+console.log(var2[1].innerText);
+var2[2].innerText="apna";
+
+        // tagname
+        let var3 =document.getElementsByTagName("h1");
+        console.log(var3[0].innerText);
+
+        // query selector
+        let var4 =document.querySelector(".one");
+        console.log(var4);
+        var4[1].innerText="ram ";
+
+    </script>
+
+    
+</body>
+</html>
